@@ -36,21 +36,21 @@ Power consumption dataset: The impact of the generated adversarial examples on t
 Google stock dataset: The impact of the crafted adversarial examples on the Google stock dataset is shown in Fig. 6. For the FGSM attack (with epsilon=0.2), we observe that the RMSE for the CNN, LSTM and GRU model (under attack) are increased by 16%, 12.9%, and 13.1%, respectively, when compared to the models without attack. For the BIM attack (with alpha = 0.001, epsilon = 0.2 and I= 200), we also observe the similar trend, that is the RMSE for the CNN, LSTM and GRU model (under attack) are increased by 35.2%, 27.2% and 28.9%, respectively. Similar to our observation on the power consumption dataset, we notice that the CNN model is more sensitive to adversarial attacks when compared to the other DL models. Moreover, we also observe that BIM results in a larger RMSE when compared to the FGSM. 
 
 <div align="center">
-<img src="https://github.com/dependable-cps/adversarial-MTSR/blob/master/Images/Attack.PNG" height="849" width="1119">
+<img src="https://github.com/dependable-cps/adversarial-MTSR/blob/master/Images/Attack.PNG" height="820" width="1119">
   </div>
 
 # Performance variation vs. the amount of perturbation
 In Fig. 7, we evaluate the LSTM and GRU regression model's performance with respect to the different amount of perturbations allowed for crafting the adversarial MTS examples. We pick the LSTM and GRU as they showed the best performance for the MTS regression task in Fig. 1 and Fig. 2. We observe that for larger values of $\epsilon$, FGSM is not very helpful in generating adversarial MTS examples for fooling the LSTM and GRU regression model. In comparison, with larger values of epsilon, BIM crafts more devastating adversarial MTS examples for fooling both the regression models and thus RMSE follows an increasing trend. This is due to the that BIM adds a small amount of perturbation alpha on each iteration whereas FGSM adds epsilon amount of noise for each data point in the MTS that may not be very helpful in generating inaccurate forecasting with higher RMSE values.
 
 <div align="center">
-<img src="https://github.com/dependable-cps/adversarial-MTSR/blob/master/Images/PerformanceVs.PNG" height="424" width="574">
+<img src="https://github.com/dependable-cps/adversarial-MTSR/blob/master/Images/PerformanceVs.PNG" height="400" width="574">
   </div>
 
 # Transferability of adversarial examples
 To evaluate the transferability of adversarial attacks, we apply the adversarial examples crafted for a DL MTS regression model on the other DL models. Table 2 summarizes the obtained results on transferability. We observe that for both datasets, the adversarial examples crafted for CNN are the most transferable. This means a higher RMSE is observed when adversarial examples crafted for the CNN model are transferred to other models. For instance, adversarial MTS examples crafted using BIM for the CNN regression model (Google stock dataset) causes a 23.4% increase when transferred to the GRU regression model. A similar trend is also observed, however, with a lower percentage increases, when adversarial examples crafted for GRU and LSTM regression models are transferred to the other DL regression models. In addition, the obtained results also show that BIM is better than FGSM in fooling (even when they are transferred) the DL models for MTS regression tasks, e.g. BIM increases the RMSE more when compared to the FGSM. Overall, the results show that the adversarial examples are capable of generalizing to a different DL network architecture. This type of attack is known as black box attacks, where the attackers do not have access to the target model’s internal parameters, yet they are able to generate perturbed time series that fool the DL models for MTSR tasks.
 
 <div align="center">
-<img src="https://github.com/dependable-cps/adversarial-MTSR/blob/master/Images/Table2.PNG" height="222" width="1139">
+<img src="https://github.com/dependable-cps/adversarial-MTSR/blob/master/Images/Table2.PNG" height="200" width="1139">
   </div>
 
 # Citation
