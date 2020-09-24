@@ -18,7 +18,7 @@ Power consumption dataset: The DL architecture of the DL models can be represent
 Google stock dataset: The architectures of our DL models can be represented as LSTM(30,30,30) lh(60), GRU(30,30,30) lh(60), and CNN(60,60,60) lh(60). From Fig. 2, it is evident that the GRU(30, 30, 30) has the best performance (with least RMSE) when predicting stock opening prices (without attack) which was trained with 300 epochs using Adam optimizer and grid search for hyperparameter optimization to minimize the objective cost function: mean squared error (MSE). The hyperparameter settings for the evaluated DL models are shown in Table 1.
 
 <div align="center">
-<img src="https://github.com/dependable-cps/adversarial-MTSR/blob/master/Images/Comp.PNG" height="869" width="1257">
+<img src="https://github.com/dependable-cps/adversarial-MTSR/blob/master/Images/Comp.PNG" height="830" width="1257">
 </div>
 
 # Attack signatures: 
@@ -27,7 +27,7 @@ Power consumption dataset: Fig. 3 shows an example of the normalized FGSM and BI
 Google stock dataset: Fig. 4 shows an example of the normalized  FGSM and BIM attack signatures (adversarial examples) generated for the volume of stocks traded (an input feature in the form of a time series). Similar adversarial examples are also generated for other input features to evaluate their impact on the LSTM, GRU and CNN models for the Google stock prediction (stock opening price). From Fig. 4, we observe that the adversarial attack generated using BIM is close to the original time series data, which makes such attacks hard to detect and thus have high chances of bypassing the attack detection methods.
 
 <div align="center">
-<img src="https://github.com/dependable-cps/adversarial-MTSR/blob/master/Images/Sig.PNG" height="871" width="1216">
+<img src="https://github.com/dependable-cps/adversarial-MTSR/blob/master/Images/Sig.PNG" height="830" width="1216">
   </div>
 
 # Impact of adversarial attacks on MTSR system
