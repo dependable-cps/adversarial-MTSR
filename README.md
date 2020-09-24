@@ -43,7 +43,7 @@ Google stock dataset: The impact of the crafted adversarial examples on the Goog
 In Fig. 7, we evaluate the LSTM and GRU regression model's performance with respect to the different amount of perturbations allowed for crafting the adversarial MTS examples. We pick the LSTM and GRU as they showed the best performance for the MTS regression task in Fig. 1 and Fig. 2. We observe that for larger values of $\epsilon$, FGSM is not very helpful in generating adversarial MTS examples for fooling the LSTM and GRU regression model. In comparison, with larger values of epsilon, BIM crafts more devastating adversarial MTS examples for fooling both the regression models and thus RMSE follows an increasing trend. This is due to the that BIM adds a small amount of perturbation alpha on each iteration whereas FGSM adds epsilon amount of noise for each data point in the MTS that may not be very helpful in generating inaccurate forecasting with higher RMSE values.
 
 <div align="center">
-<img src="https://github.com/dependable-cps/adversarial-MTSR/blob/master/Images/PerformanceVs.PNG" height="400" width="574">
+<img src="https://github.com/dependable-cps/adversarial-MTSR/blob/master/Images/PerformanceVs.PNG" height="380" width="574">
   </div>
 
 # Transferability of adversarial examples
