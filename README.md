@@ -54,7 +54,7 @@ To evaluate the transferability of adversarial attacks, we apply the adversarial
   </div>
 
 # Citation
-If this is useful for your work, please cite our <a href="https://arxiv.org/abs/2009.10149">paper</a>:<br>
+If this is useful for your work, please cite our <a href="https://arxiv.org/abs/2009.11911">paper</a>:<br>
 
 <div class="highlight highlight-text-bibtex"><pre>
 @article{advPHM20,
