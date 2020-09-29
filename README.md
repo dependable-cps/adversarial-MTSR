@@ -12,14 +12,16 @@ Google stock dataset: In this work, we evaluate the impact of adversarial attack
 Power consumption dataset: The DL architecture of the DL models can be represented as LSTM(100,100,100) lh(14), GRU(100,100,100) lh(14), and CNN(60,60,60) lh(14). The notation LSTM(100,100,100) lh(14) refers to a network that has 100 nodes in the hidden layers of the first LSTM layer, 100 nodes in the hidden layers of the second LSTM layer, 100 nodes in the hidden layers of the third LSTM layer, and a sequence length of 14. In the end, there is a 1-dimensional output layer. In Fig. 1, we compare the performance of these three DL architectures in terms of their root mean squared error (RMSE). From Fig. 1, it is evident that the LSTM(100, 100, 100) has the best performance (with least RMSE) when predicting the global active power (without attack). The hyperparameter settings for the evaluated DL models are shown in Table I. 
 
 <div align="center">
+<img src="https://github.com/dependable-cps/adversarial-MTSR/blob/master/Images/Comp.PNG" height="790" width="1257">
+</div>
+
+<div align="center">
 <img src="https://github.com/dependable-cps/adversarial-MTSR/blob/master/Images/Table1.PNG" height="150" width="600">
   </div>
 
 Google stock dataset: The architectures of our DL models can be represented as LSTM(30,30,30) lh(60), GRU(30,30,30) lh(60), and CNN(60,60,60) lh(60). From Fig. 2, it is evident that the GRU(30, 30, 30) has the best performance (with least RMSE) when predicting stock opening prices (without attack) which was trained with 300 epochs using Adam optimizer and grid search for hyperparameter optimization to minimize the objective cost function: mean squared error (MSE). The hyperparameter settings for the evaluated DL models are shown in Table 1.
 
-<div align="center">
-<img src="https://github.com/dependable-cps/adversarial-MTSR/blob/master/Images/Comp.PNG" height="790" width="1257">
-</div>
+
 
 # Attack signatures: 
 Power consumption dataset: Fig. 3 shows an example of the normalized FGSM and BIM attack signatures (adversarial examples) generated for the global reactive power variable (an input feature in the form of a time series). Similar adversarial examples are generated for the remaining five input features to evaluate their impact on the LSTM, GRU and CNN models for energy consumption prediction (global active power prediction). As shown in Fig. 3, the adversarial attack generated using BIM is close to the original time series data which makes such attack stealthy, hard to detect and often bypass the attack detection algorithms. 
