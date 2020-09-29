@@ -12,7 +12,7 @@ Google stock dataset: In this work, we evaluate the impact of adversarial attack
 Power consumption dataset: The DL architecture of the DL models can be represented as LSTM(100,100,100) lh(14), GRU(100,100,100) lh(14), and CNN(60,60,60) lh(14). The notation LSTM(100,100,100) lh(14) refers to a network that has 100 nodes in the hidden layers of the first LSTM layer, 100 nodes in the hidden layers of the second LSTM layer, 100 nodes in the hidden layers of the third LSTM layer, and a sequence length of 14. In the end, there is a 1-dimensional output layer. In Fig. 1, we compare the performance of these three DL architectures in terms of their root mean squared error (RMSE). From Fig. 1, it is evident that the LSTM(100, 100, 100) has the best performance (with least RMSE) when predicting the global active power (without attack). The hyperparameter settings for the evaluated DL models are shown in Table I. 
 
 <div align="center">
-<img src="https://github.com/dependable-cps/adversarial-MTSR/blob/master/Images/Comp.PNG" height="790" width="1257">
+<img src="https://github.com/dependable-cps/adversarial-MTSR/blob/master/Images/Comp1.PNG" height="790" width="1257">
 </div>
 
 <div align="center">
