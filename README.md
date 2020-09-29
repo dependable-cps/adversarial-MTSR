@@ -57,7 +57,7 @@ To evaluate the transferability of adversarial attacks, we apply the adversarial
 If this is useful for your work, please cite our <a href="https://arxiv.org/abs/2009.11911">paper</a>:<br>
 
 <div class="highlight highlight-text-bibtex"><pre>
-@article{advPHM20,
+@article{advMTSR,
 title={Adversarial Examples in Deep Learning for Multivariate Time Series Regression},
   author={Mode, Gautam Raj and Hoque, Khaza Anuarul},
   journal={arXiv preprint arXiv:2009.11911},
