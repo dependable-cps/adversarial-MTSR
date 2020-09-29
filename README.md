@@ -19,7 +19,7 @@ Power consumption dataset: The DL architecture of the DL models can be represent
 <img src="https://github.com/dependable-cps/adversarial-MTSR/blob/master/Images/Table1.PNG" height="150" width="600">
   </div>
 
-Google stock dataset: The architectures of our DL models can be represented as LSTM(30,30,30) lh(60), GRU(30,30,30) lh(60), and CNN(60,60,60) lh(60). From Fig. 2, it is evident that the GRU(30, 30, 30) has the best performance (with least RMSE) when predicting stock opening prices (without attack) which was trained with 300 epochs using Adam optimizer and grid search for hyperparameter optimization to minimize the objective cost function: mean squared error (MSE). The hyperparameter settings for the evaluated DL models are shown in Table 1.
+Google stock dataset: The architectures of our DL models can be represented as LSTM(30,30,30) lh(60), GRU(30,30,30) lh(60), and CNN(60,60,60) lh(60). From Fig. 2, it is evident that the GRU(30, 30, 30) has the best performance (with least RMSE) when predicting stock opening prices (without attack) which was trained with 300 epochs using Adam optimizer and grid search for hyperparameter optimization to minimize the objective cost function: mean squared error (MSE). The hyperparameter settings for the evaluated DL models are shown in Table I.
 
 
 
